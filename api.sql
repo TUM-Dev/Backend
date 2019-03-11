@@ -9,3 +9,8 @@ create table locations(
     infos VARCHAR(500),
     url VARCHAR(300) NOT NULL
 );;
+
+LOAD DATA INFILE 'location.csv'
+INTO TABLE locations
+FIELDS TERMINATED BY ';'
+LINES TERMINATED BY '\n'
